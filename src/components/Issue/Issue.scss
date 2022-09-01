@@ -12,13 +12,14 @@
     h3 {
       font-weight: 800;
       margin-bottom: 20px;
-      @include fontKorean;
+      @include fontEnglish;
     }
     .desc {
       font-weight: 300;
       font-size: 13px;
       width: 90%;
       margin: 0 auto;
+      @include fontKorean;
       p {
         @media screen and (min-width: 768px) {
           max-width: 600px;

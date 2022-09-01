@@ -11,12 +11,13 @@ import IconW from "../../assets/images/video-object-07.png";
 import IconInky from "../../assets/images/video-object-09.png";
 
 import "./Video.scss";
+import Button from "../Common/Button";
 
 const Video = () => {
   return (
     <div className="video position-relative">
       <div className="video__title text-center">
-        <h3 className="text-uppercase">Happened’s issue</h3>
+        <h3 className="text-uppercase">what happened</h3>
         <div className="desc d-flex justify-content-center">
           <p>
             How to create mobile-optimized videos in minutes. Not a designer,
@@ -24,7 +25,7 @@ const Video = () => {
           </p>
         </div>
         <div className="view-more">
-          <button>SEE MORE</button>
+          <Button />
         </div>
       </div>
 

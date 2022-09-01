@@ -43,8 +43,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="row">
-          <div className="col-xl-6 footer__contact">
+        <div className="d-flex">
+          <div className="me-auto footer__contact">
             <p className="contact-info">
               © 2020-2021 what happened corp l (주) 왓헤픈 ｜ 대표자 : 홍길동 ｜
               사업자 등록번호 : 356-00-00000 ㅣ test0101@what happened.co.kr
@@ -52,10 +52,10 @@ const Footer = () => {
               이용약관 l 개인정보처리방침
             </p>
           </div>
-          <div className="col-xl-6 footer__contact-icon">
-            <img src={iconShape} alt="iconShape" />
-            <img src={iconFacebook} alt="iconFacebook" />
-            <img src={iconBlog} alt="iconBlog" />
+          <div className="w-75 text-end footer__contact-icon">
+            <img className="me-3 mb-sm-3" src={iconShape} alt="iconShape" />
+            <img className="me-3 mb-sm-3" src={iconFacebook} alt="iconFacebook" />
+            <img className="me-3 mb-sm-3" src={iconBlog} alt="iconBlog" />
           </div>
         </div>
       </div>

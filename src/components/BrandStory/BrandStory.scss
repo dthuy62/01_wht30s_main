@@ -13,6 +13,9 @@
     h3 {
       @include fontEnglish;
       font-weight: 700;
+      @media screen and (min-width: 992px) {
+        font-size: 45px;
+      }
     }
     .desc {
       @include fontKorean;
@@ -82,18 +85,11 @@
       }
       &__text {
         @media screen and (min-width: 992px) {
-          padding: 40px 20px;
+          padding: 20px 20px;
         }
       }
-      .view-more {
+      .button__view-more {
         margin-top: 25px;
-        button {
-          padding: 8px 10px;
-          font-size: 14px;
-          border: 3px solid #020001;
-          background-color: white;
-          font-weight: 800;
-        }
       }
     }
   }

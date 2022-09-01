@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavBarItem, navbarList } from "../../utils/data";
-import { LogoIcon } from "../Icons";
+import { LogoIcon } from "../Common/Icons";
 import Logo from "../../assets/images/logo.svg";
 import "./Header.scss";
 

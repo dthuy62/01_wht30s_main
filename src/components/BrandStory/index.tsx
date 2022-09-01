@@ -9,6 +9,7 @@ import calendarIcon from "../../assets/images/object-05.png";
 import doubleBookIcon from "../../assets/images/object-06.png";
 import bookIcon from "../../assets/images/object-07.png";
 import mainImage from "../../assets/images/img.png";
+import Button from "../Common/Button";
 
 const BrandStory = () => {
   return (
@@ -57,9 +58,10 @@ const BrandStory = () => {
                 끝까지 칼이다. 쓸쓸한 희망의 못할 것은 목숨을 수 그들을 아름답고
                 고행을 끝에 설산에서 황금시대를 이상을 운다.
               </div>
-              <div className="view-more">
-                <button>SEE MORE</button>
+              <div className="button__view-more">
+              <Button />
               </div>
+              
             </div>
           </div>
         </div>
