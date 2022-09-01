@@ -1,0 +1,52 @@
+.best-product-card {
+  margin-bottom: 100px;
+  &__label {
+    left: -2px;
+    transform: translateY(-50%);
+    width: 65px;
+    height: 65px;
+    .label-icon {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .label-number {
+      font-size: 20px;
+      font-weight: 800;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-decoration: underline;
+    }
+  }
+  &__footer {
+    transform: translate(-50%, -50%);
+    border: 3px solid #111111;
+    background-color: white;
+    width: 85%;
+    padding: 10px;
+    @media screen and (min-width: 768px) {
+      padding: 1px 5px;
+      width: 80%;
+    }
+    .text {
+      font-weight: 800;
+      @media screen and (min-width: 768px) {
+        font-size: 12px;
+      }
+    }
+    .btn-go {
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  }
+}

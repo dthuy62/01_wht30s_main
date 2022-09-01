@@ -1,0 +1,180 @@
+@import "../../assets/styles/_mixins.scss";
+.brand-story {
+  background-color: #0565bb;
+  overflow: hidden;
+  &__inner {
+    padding: 100px 0;
+    @media screen and (min-width: 992px) {
+      padding: 149px 0;
+    }
+  }
+  &__title {
+    color: #fcd32a;
+    h3 {
+      @include fontEnglish;
+      font-weight: 700;
+    }
+    .desc {
+      @include fontKorean;
+      font-weight: 300;
+      p {
+        max-width: 300px;
+        @media screen and (min-width: 768px) {
+          max-width: 500px;
+        }
+      }
+    }
+  }
+  &__main-content {
+    background-color: white;
+    width: 95%;
+    z-index: 20;
+    @media screen and (min-width: 992px) {
+      margin-top: 70px;
+      width: 75%;
+      height: 360px;
+    }
+    .lines_brand {
+      padding: 3px;
+      background: #111111;
+      .line_blue {
+        height: 1px;
+        background-color: #0565bb;
+        margin-top: 3px;
+      }
+    }
+    .content-brand {
+      display: flex;
+      height: 100%;
+      &__img {
+        display: none;
+        @media screen and (min-width: 992px) {
+          display: block;
+        }
+        img {
+          object-fit: cover;
+        }
+      }
+      &__text {
+        background-color: white;
+        border-top: 3px solid #111111;
+        border-right: 3px solid #111111;
+        border-bottom: 3px solid #111111;
+      }
+      &__img,
+      &__text {
+        width: 100%;
+        padding: 20px;
+        @media screen and (min-width: 992px) {
+          width: calc(100% / 2);
+          padding: 0;
+        }
+        &-title {
+          font-weight: 800;
+          margin-bottom: 20px;
+          font-size: 18px;
+        }
+        &-desc {
+          font-size: 14px;
+          line-height: 28px;
+          color: #222222;
+        }
+      }
+      &__text {
+        @media screen and (min-width: 992px) {
+          padding: 40px 20px;
+        }
+      }
+      .view-more {
+        margin-top: 25px;
+        button {
+          padding: 8px 10px;
+          font-size: 14px;
+          border: 3px solid #020001;
+          background-color: white;
+          font-weight: 800;
+        }
+      }
+    }
+  }
+  &__list-icon-left {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    @media screen and (min-width: 992px) {
+      display: block;
+    }
+    .blank-note-ic {
+      width: 10vw;
+      left: 9vw;
+    }
+    .double-book-ic {
+      width: 10vw;
+      bottom: 180px;
+    }
+    .book-ic {
+      width: 9vw;
+      bottom: 180px;
+      left: 10vw;
+    }
+  }
+  &__list-icon-right {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    @media screen and (min-width: 992px) {
+      display: block;
+    }
+    .calendar-ic {
+      width: 19vw;
+      right: -1vw;
+      bottom: 160px;
+      z-index: 5;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .flower-pot-ic {
+      width: 14vw;
+      bottom: 240px;
+      right: -4vw;
+      z-index: 4;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  &__list-icon-top {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    .plan-note-yellow-ic {
+      img {
+        object-fit: cover;
+      }
+      @media screen and (min-width: 768px) {
+        top: 4vw;
+        right: 11vw;
+        width: 12vw;
+      }
+    }
+    .plan-note-ic {
+      img {
+        object-fit: cover;
+      }
+      @media screen and (min-width: 768px) {
+        width: 12vw;
+        top: 7vw;
+        right: 5vw;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@import "../../assets/styles/_mixins.scss";
+.banner-introduction {
+  @include fontEnglish;
+  &__bg {
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 100%;
+    @media screen and (min-width: 991px) {
+      
+    }
+  }
+  &__content {
+    color: white;
+    text-align: left;
+    padding: 30px 0;
+   @media screen and (min-width: 991px) {
+    padding: 85px 0;
+   }
+    .title {
+      font-size: 20px;
+      letter-spacing: 5px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      @media screen and (min-width: 991px) {
+        font-size: 50px;
+        line-height: 60px;
+        margin-bottom: 59px;
+      }
+    }
+    .desc {
+      font-weight: 400;
+      font-size: 14px;
+      @media screen and (min-width: 991px) {
+        font-size: 20px;
+        line-height: 35px;
+      }
+    }
+  }
+}

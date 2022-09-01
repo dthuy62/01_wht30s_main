@@ -1,0 +1,54 @@
+@import "../../assets/styles/_mixins.scss";
+.product {
+  @include fontEnglish;
+  @media screen and (min-width: 991px) {
+    width: calc(100% / 5 - 18px);
+    margin-right: 18px;
+    margin-bottom: 18px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 18px;
+    margin-bottom: 18px;
+  }
+  &-content {
+    &__title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 35px;
+    }
+    &__desc {
+        font-weight: 400;
+      .favorites {
+        display: flex;
+         align-items: center;
+        .icon-heart {
+          background-color: #fa7b26;
+          display: inline-block;
+          height: 10px;
+          margin: 0 10px;
+          position: relative;
+          top: 0;
+          transform: rotate(-45deg);
+          width: 10px;
+          &::before,
+          &::after {
+            content: "";
+            background-color: #fa7b26;
+            border-radius: 50%;
+            height: 10px;
+            position: absolute;
+            width: 10px;
+          }
+          &::before {
+            top: -5px;
+            left: 0;
+          }
+          &::after {
+            left: 5px;
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+}

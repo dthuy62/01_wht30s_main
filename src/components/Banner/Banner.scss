@@ -1,0 +1,76 @@
+@import "../../assets/styles/_mixins.scss";
+.banner {
+  @include fontEnglish;
+  margin-top: 77px;
+  background-color: #ea4913;
+  padding: 50px 0;
+  @media screen and (min-width: 992px) {
+    padding: 119px 0;
+  }
+  &-container {
+    width: 90%;
+    margin: 0 auto;
+    @media screen and (min-width: 992px) {
+      width: 70%;
+    }
+  }
+  &__title {
+    color: #111111;
+    font-weight: 800;
+    font-style: italic;
+    @media screen and (min-width: 992px) {
+      font-size: 50px;
+      line-height: 27px;
+    }
+  }
+  &__bg {
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  &__footer {
+    &-content {
+      text-align: center;
+      width: 30%;
+      font-weight: 800;
+      &-icon {
+        transform: rotate(90deg);
+        width: 23px;
+        height: 17px;
+        @media screen and (min-width: 992px) {
+          transform: rotate(0deg);
+          width: auto;
+          height: auto;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+      @media screen and (min-width: 992px) {
+        width: calc(100% / 5);
+        font-size: 20px;
+        line-height: 27px;
+        color: #111111;
+      }
+    }
+    &-content.left,
+    &-content.right {
+      border: 3.2px solid #111111;
+      border-radius: 35px;
+      padding: 10px 15px;
+      @media screen and (min-width: 992px) {
+        padding: 17px 20px;
+      }
+    }
+    &-content.center {
+      border-top: 3.2px solid #111111;
+      border-bottom: 3.2px solid #111111;
+      padding: 15px 0;
+    }
+  }
+}

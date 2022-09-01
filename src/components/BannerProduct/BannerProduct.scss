@@ -1,0 +1,77 @@
+@import "../../assets/styles/_mixins.scss";
+.banner-best-product {
+  background-color: #fcd426;
+  overflow: hidden;
+  // @media screen and (min-width: 991px) {
+  //   height: 150vh;
+  // }
+  // @media screen and (min-width: 767px) {
+  //   height: 110vh;
+  // }
+  // @media screen and (max-width: 425px) {
+  //   height: 250vh;
+  // }
+  @include fontEnglish;
+    &__inner {
+      .title-container {
+        padding-top: 50px;
+
+        color: #f96400;
+        &__title {
+          font-weight: 700;
+          font-size: 30px;
+          @media screen and (min-width: 991px) {
+            font-size: 50px;
+            letter-spacing: 5px;
+            line-height: 60px;
+          }
+        }
+        &__desc {
+          p {
+            max-width: 400px;
+          }
+          @media screen and (min-width: 991px) {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 32px;
+            padding-top: 49px;
+            p {
+              max-width: 700px;
+            }
+          }
+        }
+      }
+    }
+  
+  .best-product-list {
+    background-image: url(../../assets/images/bes-bg.png);
+    background-repeat: repeat;
+    background-position-y: top;
+    padding-bottom: 35%;
+    margin-top: -17%;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 50%;
+    }
+    @media screen and (min-width: 1280px) {
+      padding-bottom: 35%;
+    }
+    .inner-list {
+      // margin-top: 13.7%;
+      // 
+      position: relative;
+      transform: translateY(10.3%);
+      @media screen and (min-width: 768px) {
+        margin-top: -33%;
+        transform: translateY(106%);
+      }
+      @media screen and (min-width: 992px) {
+        margin-top: -25%;
+        transform: translateY(91.5%);
+      }
+      @media screen and (min-width: 1280px) {
+        margin-top: -20%;
+        transform: translateY(70%);
+      }
+    }
+  }
+}

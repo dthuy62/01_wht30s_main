@@ -1,0 +1,8 @@
+@import "../../assets/styles/_mixins.scss";
+.footer {
+    @include fontEnglish;
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,131 @@
+@import "../../assets/styles/_mixins.scss";
+.video {
+  padding: 100px 0;
+  overflow: hidden;
+  @include fontEnglish;
+  &__title {
+    padding-bottom: 100px;
+
+    h3 {
+      font-weight: 800;
+      margin-bottom: 20px;
+      @media screen and (min-width: 768px) {
+        font-size: 50px;
+        line-height: 60px;
+        letter-spacing: 10px;
+      }
+    }
+    .desc {
+      font-weight: 400;
+      @media screen and (min-width: 768px) {
+        font-size: 20px;
+        line-height: 32px;
+      }
+      p {
+        width: 80%;
+        @media screen and (min-width: 768px) {
+          width: 50%;
+        }
+      }
+    }
+    .view-more {
+      margin-top: 25px;
+      button {
+        font-size: 14px;
+        padding: 10px 15px;
+        border: 3px solid #020001;
+        background-color: white;
+        font-weight: 800;
+        color: #020001;
+        @media screen and (min-width: 768px) {
+          font-size: 23px;
+        }
+      }
+    }
+  }
+  &__content-center {
+    width: 90%;
+    @media screen and (min-width: 768px) {
+      width: 75%;
+    }
+    img {
+      z-index: 20;
+    }
+  }
+
+  .icon-bottom-left {
+    bottom: 0;
+    z-index: 0;
+    left: 0;
+    width: 10%;
+    margin-left: -8%;
+    margin-bottom: -6%;
+  }
+  .icon-bottom-right {
+    left: 0.5%;
+    bottom: 0;
+    width: 30%;
+    z-index: 1;
+    margin-bottom: -18.5%;
+  }
+  .icon-video-inky {
+    z-index: 0;
+    right: 0;
+    width: 25%;
+    margin-right: -34%;
+    bottom: 10vw;
+  }
+  .icon-video-pink {
+    right: 0;
+    width: 40%;
+    margin-right: -35%;
+    bottom: 0;
+    margin-bottom: -8vw;
+    z-index: 1;
+  }
+  .icon-video-top-left {
+    left: 9%;
+    top: 0;
+    width: 6vw;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  .icon-video-left {
+    left: -13vw;
+    top: 240px;
+    img {
+      height: 20vw;
+    }
+  }
+  .icon-top-right-bottom {
+    top: 16vw;
+    width: 5vw;
+    right: 14%;
+    z-index: 1;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    @media screen and (min-width: 992px) {
+      display: block;
+    }
+  }
+  .icon-top-right-top {
+    top: 13vw;
+    width: 6vw;
+    right: 10%;
+    z-index: 0;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    @media screen and (min-width: 992px) {
+      display: block;
+    }
+  }
+}
